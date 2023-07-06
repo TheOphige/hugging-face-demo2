@@ -7,8 +7,6 @@ def predict(prompt):
     summary = model(prompt)[0]["summary_text"]
     return summary
 
-with gr.Blocks() as demo:
-    textbox = gr.Textbox(placeholder="Enter text block to summarize", lines=4)
-    iface = gr.Interface(fn=predict, inputs=textbox, outputs="text")
-
-iface.launch()
+# create an interface for the model
+with gr.Interface(predict, "textbox", "text") as interface:
+    interface.launch()
