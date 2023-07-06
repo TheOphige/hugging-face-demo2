@@ -8,5 +8,6 @@ def predict(prompt):
     return summary
 
 # create an interface for the model
-with gr.Interface(predict, "textbox", "text") as interface:
+textbox = gr.Textbox(placeholder="Enter text block to summarize", lines=4)
+with gr.Interface(predict, inputs= textbox, outputs= "text", title="Summarize Text!!!") as interface:
     interface.launch()
