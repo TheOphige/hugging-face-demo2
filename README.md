@@ -1,6 +1,4 @@
-# Text summarizer using huggingface 
-
----
+ ---
 title: Demo
 emoji: 🌖
 colorFrom: purple
@@ -17,3 +15,6 @@ license: cc
 
 
 [Try Demo Text Summarization Here](https://huggingface.co/spaces/TheOphige/demo2)
+
+
+# Text summarizer using huggingface
