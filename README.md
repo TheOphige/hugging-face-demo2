@@ -1,4 +1,4 @@
- ---
+---
 title: Demo
 emoji: 🌖
 colorFrom: purple
